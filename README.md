@@ -20,26 +20,26 @@ your `/articles/new` route _before_ your `/articles/:id` route.
 
 ### Database
 
-First, you'll need to create the `articles` table. An article should have a title
+<!-- First, you'll need to create the `articles` table. An article should have a title
 and content.
 
-Next, set up the corresponding `Article` model. Make sure the class inherits from `ActiveRecord::Base`.
+Next, set up the corresponding `Article` model. Make sure the class inherits from `ActiveRecord::Base`. -->
 
 ### Create
 
-Now that we have the database and model set up, it's time to set up the ability
-to create an article.
+<!-- Now that we have the database and model set up, it's time to set up the ability
+to create an article. -->
 
-First, create a route in your controller, `get '/articles/new'`, that renders the
-`new.erb` view.
+<!-- First, create a route in your controller, `get '/articles/new'`, that renders the
+`new.erb` view. -->
 
-We need to create an ERB file in the views directory, `new.erb`, with a form
+<!-- We need to create an ERB file in the views directory, `new.erb`, with a form
 that `POST`s to a controller action, `/articles`. The controller action should use
 the Create CRUD action to create the article and save it to the database.
 When the form on `new.erb` is submitted, the action, pointing to `/articles`,
 will trigger a render of an `index.erb` file automatically. Before we can
 fully test if our form is working, we need to create that `index.erb` file, as
-our site will currently crash upon submission.
+our site will currently crash upon submission. -->
 
 ### Read
 
@@ -47,16 +47,16 @@ The Read CRUD action corresponds to two different controller actions: show and
 index. The show action should render the ERB view `show.erb`, which shows an
 individual article. The index action should render the ERB view `index.erb`, which
 shows a list of _all_ of the articles.
-
+<!-- 
 Create the `get '/articles'` controller action. This action should use Active
 Record to grab _all_ of the articles and store them in an instance variable,
 `@articles`. Then, it should render the `index.erb` view. That view should use ERB
-to iterate over `@articles` and render them on the page.
+to iterate over `@articles` and render them on the page. -->
 
-Create the `get '/articles/:id'` controller action. This action should use
+<!-- Create the `get '/articles/:id'` controller action. This action should use
 Active Record to grab the article with the `id` that is in the `params` and set
 it equal to `@article`. Then, it should render the `show.erb` view page. That
-view should use ERB to render the `@article`'s title and content.
+view should use ERB to render the `@article`'s title and content. -->
 
 ### Update
 
